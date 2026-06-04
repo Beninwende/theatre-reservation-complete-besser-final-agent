@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+data/theatre.db
+data/_smoke_test.db
+application.log
+vector_store/

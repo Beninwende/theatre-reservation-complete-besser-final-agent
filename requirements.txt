@@ -1,0 +1,9 @@
+# BESSER Agentic Framework — install with quotes in zsh:
+#   pip install 'besser-agentic-framework[all]'
+besser-agentic-framework[all]>=2.0.0
+PyYAML>=6.0
+Jinja2>=3.1.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0
+# Optional — Lab 1 B-UML domain model: pip install besser (see models/domain_model.py)

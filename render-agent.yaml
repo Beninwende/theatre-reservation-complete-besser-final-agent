@@ -1,0 +1,17 @@
+# Deploy the full BAF agent (Streamlit + WebSocket) — matches BESSER editor agent export.
+services:
+  - type: web
+    name: theatre-reservation-agent
+    runtime: python
+    plan: free
+    buildCommand: pip install 'besser-agentic-framework[all]>=2.0.0' PyYAML>=6.0
+    startCommand: python Theatre_reservation_agent.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: THEATRE_PERSIST
+        value: "1"
+      - key: THEATRE_DB
+        value: /app/data/theatre.db

@@ -1,11 +1,13 @@
+# Lab 6 — example Render blueprint (adjust repo URL and env vars).
 services:
-  # Standalone chatbot service (WebSocket + Streamlit UI)
   - type: web
-    name: besser-fcb3b1b42df4
-    runtime: python
-    plan: free
-    buildCommand: pip install torch==2.6.0+cpu scikit-learn==1.6.1 besser-agentic-framework[llms]==4.3.2 --extra-index-url https://download.pytorch.org/whl/cpu && python -c "import nltk; nltk.download('punkt', quiet=True); nltk.download('punkt_tab', quiet=True)"
-    startCommand: python -c "import yaml, os; c = yaml.safe_load(open('config.yaml')); c['platforms']['websocket']['host'] = '0.0.0.0'; c['platforms']['websocket']['port'] = 8765; ws = c['platforms']['websocket']; streamlit_cfg = ws.setdefault('streamlit', {}); streamlit_cfg['host'] = '0.0.0.0'; streamlit_cfg['port'] = int(os.environ['PORT']); c['db']['monitoring']['enabled'] = False; sdb = c['db'].setdefault('streamlit', {}); db_host = os.environ.get('STREAMLIT_DB_HOST'); sdb['enabled'] = bool(db_host); sdb['dialect'] = os.environ.get('STREAMLIT_DB_DIALECT', 'postgresql'); sdb['host'] = db_host or 'localhost'; sdb['port'] = int(os.environ.get('STREAMLIT_DB_PORT') or 5432); sdb['database'] = os.environ.get('STREAMLIT_DB_NAME', ''); sdb['username'] = os.environ.get('STREAMLIT_DB_USER', ''); sdb['password'] = os.environ.get('STREAMLIT_DB_PASSWORD', ''); nlp_cfg = c.setdefault('nlp', {}); openai_cfg = nlp_cfg.setdefault('openai', {}); api_key = os.environ.get('OPENAI_API_KEY'); openai_cfg['api_key'] = api_key if api_key else openai_cfg.get('api_key', ''); yaml.safe_dump(c, open('config.yaml','w'))" && python -u "Theatre_reservation_agent.py"
+    name: theatre-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerCommand: uvicorn backend.main_api:app --host 0.0.0.0 --port $PORT
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.3
+      - key: THEATRE_PERSIST
+        value: "1"
+      - key: THEATRE_DB
+        value: /app/data/theatre.db
+    healthCheckPath: /health

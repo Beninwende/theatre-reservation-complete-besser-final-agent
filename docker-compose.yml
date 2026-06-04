@@ -1,0 +1,34 @@
+# Theatre final project — API + static web + BAF agent (educational stack).
+services:
+  api:
+    build: .
+    command: uvicorn backend.main_api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      THEATRE_PERSIST: "1"
+      THEATRE_DB: /app/data/theatre.db
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./webapp:/usr/share/nginx/html:ro
+
+  agent:
+    build: .
+    command: python Theatre_reservation_agent.py
+    ports:
+      - "5000:5000"
+    environment:
+      THEATRE_PERSIST: "1"
+      THEATRE_DB: /app/data/theatre.db
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    volumes:
+      - ./data:/app/data
+      - ./config.yaml:/app/config.yaml:ro
+    depends_on:
+      - api

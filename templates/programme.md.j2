@@ -1,0 +1,10 @@
+# {{ title }}
+
+{% for s in shows %}
+## {{ s.title }}
+- **When:** {{ s.datetime }}
+- **Price:** {{ s.price_eur }} €
+- **PMR / access:** {{ s.pmr_entrance }}
+
+{% endfor %}
+_Generated from `data/shows.yaml` — edit the YAML and re-run `python generate_programme.py`._

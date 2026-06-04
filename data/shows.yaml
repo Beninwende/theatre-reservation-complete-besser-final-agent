@@ -1,0 +1,26 @@
+# Sample shows for the educational reservation bot (in-memory capacity).
+shows:
+  - id: hamlet
+    title: "Hamlet"
+    datetime: "2026-06-14 19:30"
+    price_eur: 28
+    capacity: 80
+    pmr_entrance: "Left side of the hall, ramp at door B."
+  - id: jazz_night
+    title: "Jazz Night"
+    datetime: "2026-06-15 20:00"
+    price_eur: 18
+    capacity: 120
+    pmr_entrance: "Main foyer — elevator to stalls."
+  - id: comedy_club
+    title: "Stand-up Comedy"
+    datetime: "2026-06-16 21:00"
+    price_eur: 15
+    capacity: 60
+    pmr_entrance: "Upper floor: use lift near bar."
+
+zones:
+  - id: front
+    label: "Front stalls"
+  - id: rear
+    label: "Rear stalls"

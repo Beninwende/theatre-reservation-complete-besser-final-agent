@@ -1,0 +1,10 @@
+# Lab 7 — user profiles linked to theatre_bot.py (STANDARD / ACCESS intents).
+profiles:
+  - id: standard
+    wme_tab: Standard spectator
+    intent: profile_standard
+    adaptation_hint: "Short, factual box-office answers."
+  - id: access
+    wme_tab: Accessibility-focused spectator
+    intent: profile_access
+    adaptation_hint: "Clear step-by-step answers; repeat PMR and hearing-loop details."
