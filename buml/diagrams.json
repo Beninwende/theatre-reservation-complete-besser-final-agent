@@ -1,0 +1,2920 @@
+{
+  "project": {
+    "id": "project_1780579579515_xbliy0v23",
+    "type": "Project",
+    "schemaVersion": 4,
+    "name": "Theatre_reservation_(complete_BESSER_final)",
+    "description": "Domain model, agent, user profiles, GUI; code in theatre_bot.py + webapp/",
+    "owner": "BESSER Education",
+    "createdAt": "2026-06-04T13:26:19.515Z",
+    "currentDiagramType": "AgentDiagram",
+    "currentDiagramIndices": {
+      "ClassDiagram": 0,
+      "ObjectDiagram": 0,
+      "StateMachineDiagram": 0,
+      "AgentDiagram": 0,
+      "NNDiagram": 0,
+      "UserDiagram": 0,
+      "GUINoCodeDiagram": 0,
+      "QuantumCircuitDiagram": 0
+    },
+    "diagrams": {
+      "ClassDiagram": [
+        {
+          "id": "theatre_domain_class",
+          "title": "Theatre domain",
+          "lastUpdate": "2026-06-04T13:27:18.193Z",
+          "model": {
+            "version": "3.0.0",
+            "type": "ClassDiagram",
+            "size": {
+              "width": 1736,
+              "height": 792
+            },
+            "interactive": {
+              "elements": {},
+              "relationships": {}
+            },
+            "elements": {
+              "a0001-0000-4000-8000-000000000001": {
+                "id": "a0001-0000-4000-8000-000000000001",
+                "name": "Theatre",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": -222,
+                  "y": 62,
+                  "width": 200,
+                  "height": 70
+                },
+                "attributes": [
+                  "b0101-0000-4000-8000-000000000101"
+                ],
+                "methods": []
+              },
+              "b0101-0000-4000-8000-000000000101": {
+                "id": "b0101-0000-4000-8000-000000000101",
+                "name": "name",
+                "type": "ClassAttribute",
+                "owner": "a0001-0000-4000-8000-000000000001",
+                "bounds": {
+                  "x": -221.5,
+                  "y": 102.5,
+                  "width": 199,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "a0002-0000-4000-8000-000000000002": {
+                "id": "a0002-0000-4000-8000-000000000002",
+                "name": "Show",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": 93,
+                  "y": 4,
+                  "width": 240,
+                  "height": 220
+                },
+                "attributes": [
+                  "b0201-0000-4000-8000-000000000201",
+                  "b0202-0000-4000-8000-000000000202",
+                  "b0203-0000-4000-8000-000000000203",
+                  "b0204-0000-4000-8000-000000000204",
+                  "b0205-0000-4000-8000-000000000205",
+                  "b0206-0000-4000-8000-000000000206"
+                ],
+                "methods": []
+              },
+              "b0201-0000-4000-8000-000000000201": {
+                "id": "b0201-0000-4000-8000-000000000201",
+                "name": "id",
+                "type": "ClassAttribute",
+                "owner": "a0002-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 93.5,
+                  "y": 44.5,
+                  "width": 239,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0202-0000-4000-8000-000000000202": {
+                "id": "b0202-0000-4000-8000-000000000202",
+                "name": "title",
+                "type": "ClassAttribute",
+                "owner": "a0002-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 93.5,
+                  "y": 74.5,
+                  "width": 239,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0203-0000-4000-8000-000000000203": {
+                "id": "b0203-0000-4000-8000-000000000203",
+                "name": "datetime",
+                "type": "ClassAttribute",
+                "owner": "a0002-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 93.5,
+                  "y": 104.5,
+                  "width": 239,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0204-0000-4000-8000-000000000204": {
+                "id": "b0204-0000-4000-8000-000000000204",
+                "name": "price_eur",
+                "type": "ClassAttribute",
+                "owner": "a0002-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 93.5,
+                  "y": 134.5,
+                  "width": 239,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "int",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0205-0000-4000-8000-000000000205": {
+                "id": "b0205-0000-4000-8000-000000000205",
+                "name": "capacity",
+                "type": "ClassAttribute",
+                "owner": "a0002-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 93.5,
+                  "y": 164.5,
+                  "width": 239,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "int",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0206-0000-4000-8000-000000000206": {
+                "id": "b0206-0000-4000-8000-000000000206",
+                "name": "pmr_entrance",
+                "type": "ClassAttribute",
+                "owner": "a0002-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 93.5,
+                  "y": 194.5,
+                  "width": 239,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "a0003-0000-4000-8000-000000000003": {
+                "id": "a0003-0000-4000-8000-000000000003",
+                "name": "Reservation",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": 588,
+                  "y": -262,
+                  "width": 260,
+                  "height": 190
+                },
+                "attributes": [
+                  "b0301-0000-4000-8000-000000000301",
+                  "b0302-0000-4000-8000-000000000302",
+                  "b0303-0000-4000-8000-000000000303",
+                  "b0304-0000-4000-8000-000000000304",
+                  "b0305-0000-4000-8000-000000000305"
+                ],
+                "methods": []
+              },
+              "b0301-0000-4000-8000-000000000301": {
+                "id": "b0301-0000-4000-8000-000000000301",
+                "name": "confirmation_code",
+                "type": "ClassAttribute",
+                "owner": "a0003-0000-4000-8000-000000000003",
+                "bounds": {
+                  "x": 588.5,
+                  "y": -221.5,
+                  "width": 259,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0302-0000-4000-8000-000000000302": {
+                "id": "b0302-0000-4000-8000-000000000302",
+                "name": "customer_name",
+                "type": "ClassAttribute",
+                "owner": "a0003-0000-4000-8000-000000000003",
+                "bounds": {
+                  "x": 588.5,
+                  "y": -191.5,
+                  "width": 259,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0303-0000-4000-8000-000000000303": {
+                "id": "b0303-0000-4000-8000-000000000303",
+                "name": "seats",
+                "type": "ClassAttribute",
+                "owner": "a0003-0000-4000-8000-000000000003",
+                "bounds": {
+                  "x": 588.5,
+                  "y": -161.5,
+                  "width": 259,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "int",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0304-0000-4000-8000-000000000304": {
+                "id": "b0304-0000-4000-8000-000000000304",
+                "name": "zone",
+                "type": "ClassAttribute",
+                "owner": "a0003-0000-4000-8000-000000000003",
+                "bounds": {
+                  "x": 588.5,
+                  "y": -131.5,
+                  "width": 259,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0305-0000-4000-8000-000000000305": {
+                "id": "b0305-0000-4000-8000-000000000305",
+                "name": "accessibility",
+                "type": "ClassAttribute",
+                "owner": "a0003-0000-4000-8000-000000000003",
+                "bounds": {
+                  "x": 588.5,
+                  "y": -101.5,
+                  "width": 259,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "a0004-0000-4000-8000-000000000004": {
+                "id": "a0004-0000-4000-8000-000000000004",
+                "name": "StandardSpectator",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": -134.5,
+                  "y": -224.52734375,
+                  "width": 280,
+                  "height": 70
+                },
+                "attributes": [
+                  "b0401-0000-4000-8000-000000000401"
+                ],
+                "methods": []
+              },
+              "b0401-0000-4000-8000-000000000401": {
+                "id": "b0401-0000-4000-8000-000000000401",
+                "name": "boxOfficeStyle",
+                "type": "ClassAttribute",
+                "owner": "a0004-0000-4000-8000-000000000004",
+                "bounds": {
+                  "x": -134,
+                  "y": -184.02734375,
+                  "width": 279,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "short",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "a0005-0000-4000-8000-000000000005": {
+                "id": "a0005-0000-4000-8000-000000000005",
+                "name": "AccessibilitySpectator",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": -11,
+                  "y": -376,
+                  "width": 300,
+                  "height": 100
+                },
+                "attributes": [
+                  "b0501-0000-4000-8000-000000000501",
+                  "b0502-0000-4000-8000-000000000502"
+                ],
+                "methods": []
+              },
+              "b0501-0000-4000-8000-000000000501": {
+                "id": "b0501-0000-4000-8000-000000000501",
+                "name": "guidance",
+                "type": "ClassAttribute",
+                "owner": "a0005-0000-4000-8000-000000000005",
+                "bounds": {
+                  "x": -10.5,
+                  "y": -335.5,
+                  "width": 299,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "detailed",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "b0502-0000-4000-8000-000000000502": {
+                "id": "b0502-0000-4000-8000-000000000502",
+                "name": "boxOfficeTone",
+                "type": "ClassAttribute",
+                "owner": "a0005-0000-4000-8000-000000000005",
+                "bounds": {
+                  "x": -10.5,
+                  "y": -305.5,
+                  "width": 299,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "ACCESS",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              }
+            },
+            "relationships": {
+              "r0001-0000-4000-8000-000000000001": {
+                "id": "r0001-0000-4000-8000-000000000001",
+                "name": "programme",
+                "type": "ClassBidirectional",
+                "owner": null,
+                "bounds": {
+                  "x": -22,
+                  "y": 87,
+                  "width": 115,
+                  "height": 49.5
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 10
+                  },
+                  {
+                    "x": 115,
+                    "y": 10
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "a0001-0000-4000-8000-000000000001",
+                  "multiplicity": "1",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "a0002-0000-4000-8000-000000000002",
+                  "multiplicity": "1..*",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
+              },
+              "r0002-0000-4000-8000-000000000002": {
+                "id": "r0002-0000-4000-8000-000000000002",
+                "name": "bookings",
+                "type": "ClassBidirectional",
+                "owner": null,
+                "bounds": {
+                  "x": 333,
+                  "y": -177,
+                  "width": 255,
+                  "height": 330.5
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 291
+                  },
+                  {
+                    "x": 127.5,
+                    "y": 291
+                  },
+                  {
+                    "x": 127.5,
+                    "y": 10
+                  },
+                  {
+                    "x": 255,
+                    "y": 10
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "a0002-0000-4000-8000-000000000002",
+                  "multiplicity": "1",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "a0003-0000-4000-8000-000000000003",
+                  "multiplicity": "0..*",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
+              },
+              "r0003-0000-4000-8000-000000000003": {
+                "id": "r0003-0000-4000-8000-000000000003",
+                "name": "places",
+                "type": "ClassBidirectional",
+                "owner": null,
+                "bounds": {
+                  "x": 145.5,
+                  "y": -199.52734375,
+                  "width": 442.5,
+                  "height": 49.5
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 10
+                  },
+                  {
+                    "x": 442.5,
+                    "y": 10
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "a0004-0000-4000-8000-000000000004",
+                  "multiplicity": "1",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "a0003-0000-4000-8000-000000000003",
+                  "multiplicity": "0..*",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
+              },
+              "r0004-0000-4000-8000-000000000004": {
+                "id": "r0004-0000-4000-8000-000000000004",
+                "name": "places",
+                "type": "ClassBidirectional",
+                "owner": null,
+                "bounds": {
+                  "x": 289,
+                  "y": -336,
+                  "width": 299,
+                  "height": 208.5
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 10
+                  },
+                  {
+                    "x": 149.5,
+                    "y": 10
+                  },
+                  {
+                    "x": 149.5,
+                    "y": 169
+                  },
+                  {
+                    "x": 299,
+                    "y": 169
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "a0005-0000-4000-8000-000000000005",
+                  "multiplicity": "1",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "a0003-0000-4000-8000-000000000003",
+                  "multiplicity": "0..*",
+                  "role": "",
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
+              }
+            },
+            "assessments": {}
+          }
+        }
+      ],
+      "ObjectDiagram": [
+        {
+          "id": "theatre_object_example",
+          "title": "Example booking",
+          "lastUpdate": "2026-06-04T13:27:22.456Z",
+          "model": {
+            "version": "3.0.0",
+            "type": "ObjectDiagram",
+            "size": {
+              "width": 1680,
+              "height": 440
+            },
+            "interactive": {
+              "elements": {},
+              "relationships": {}
+            },
+            "elements": {
+              "o0001-0000-4000-8000-000000000001": {
+                "id": "o0001-0000-4000-8000-000000000001",
+                "name": "hamletShow:Show",
+                "type": "ObjectName",
+                "owner": null,
+                "bounds": {
+                  "x": 120,
+                  "y": 100,
+                  "width": 280,
+                  "height": 100
+                },
+                "attributes": [
+                  "o0002-0000-4000-8000-000000000002",
+                  "o0003-0000-4000-8000-000000000003"
+                ],
+                "methods": []
+              },
+              "o0002-0000-4000-8000-000000000002": {
+                "id": "o0002-0000-4000-8000-000000000002",
+                "name": "title = Hamlet",
+                "type": "ObjectAttribute",
+                "owner": "o0001-0000-4000-8000-000000000001",
+                "bounds": {
+                  "x": 120.5,
+                  "y": 140.5,
+                  "width": 279,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "o0003-0000-4000-8000-000000000003": {
+                "id": "o0003-0000-4000-8000-000000000003",
+                "name": "capacity = 80",
+                "type": "ObjectAttribute",
+                "owner": "o0001-0000-4000-8000-000000000001",
+                "bounds": {
+                  "x": 120.5,
+                  "y": 170.5,
+                  "width": 279,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "o0004-0000-4000-8000-000000000004": {
+                "id": "o0004-0000-4000-8000-000000000004",
+                "name": "res1:Reservation",
+                "type": "ObjectName",
+                "owner": null,
+                "bounds": {
+                  "x": 520,
+                  "y": 120,
+                  "width": 300,
+                  "height": 70
+                },
+                "attributes": [
+                  "o0005-0000-4000-8000-000000000005"
+                ],
+                "methods": []
+              },
+              "o0005-0000-4000-8000-000000000005": {
+                "id": "o0005-0000-4000-8000-000000000005",
+                "name": "confirmation_code = BK-00001",
+                "type": "ObjectAttribute",
+                "owner": "o0004-0000-4000-8000-000000000004",
+                "bounds": {
+                  "x": 520.5,
+                  "y": 160.5,
+                  "width": 299,
+                  "height": 30
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              }
+            },
+            "relationships": {},
+            "assessments": {},
+            "referenceDiagramData": {
+              "version": "3.0.0",
+              "type": "ClassDiagram",
+              "size": {
+                "width": 1736,
+                "height": 792
+              },
+              "interactive": {
+                "elements": {},
+                "relationships": {}
+              },
+              "elements": {
+                "a0001-0000-4000-8000-000000000001": {
+                  "id": "a0001-0000-4000-8000-000000000001",
+                  "name": "Theatre",
+                  "type": "Class",
+                  "owner": null,
+                  "bounds": {
+                    "x": -222,
+                    "y": 62,
+                    "width": 200,
+                    "height": 70
+                  },
+                  "attributes": [
+                    "b0101-0000-4000-8000-000000000101"
+                  ],
+                  "methods": []
+                },
+                "b0101-0000-4000-8000-000000000101": {
+                  "id": "b0101-0000-4000-8000-000000000101",
+                  "name": "name",
+                  "type": "ClassAttribute",
+                  "owner": "a0001-0000-4000-8000-000000000001",
+                  "bounds": {
+                    "x": -221.5,
+                    "y": 102.5,
+                    "width": 199,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "a0002-0000-4000-8000-000000000002": {
+                  "id": "a0002-0000-4000-8000-000000000002",
+                  "name": "Show",
+                  "type": "Class",
+                  "owner": null,
+                  "bounds": {
+                    "x": 93,
+                    "y": 4,
+                    "width": 240,
+                    "height": 220
+                  },
+                  "attributes": [
+                    "b0201-0000-4000-8000-000000000201",
+                    "b0202-0000-4000-8000-000000000202",
+                    "b0203-0000-4000-8000-000000000203",
+                    "b0204-0000-4000-8000-000000000204",
+                    "b0205-0000-4000-8000-000000000205",
+                    "b0206-0000-4000-8000-000000000206"
+                  ],
+                  "methods": []
+                },
+                "b0201-0000-4000-8000-000000000201": {
+                  "id": "b0201-0000-4000-8000-000000000201",
+                  "name": "id",
+                  "type": "ClassAttribute",
+                  "owner": "a0002-0000-4000-8000-000000000002",
+                  "bounds": {
+                    "x": 93.5,
+                    "y": 44.5,
+                    "width": 239,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0202-0000-4000-8000-000000000202": {
+                  "id": "b0202-0000-4000-8000-000000000202",
+                  "name": "title",
+                  "type": "ClassAttribute",
+                  "owner": "a0002-0000-4000-8000-000000000002",
+                  "bounds": {
+                    "x": 93.5,
+                    "y": 74.5,
+                    "width": 239,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0203-0000-4000-8000-000000000203": {
+                  "id": "b0203-0000-4000-8000-000000000203",
+                  "name": "datetime",
+                  "type": "ClassAttribute",
+                  "owner": "a0002-0000-4000-8000-000000000002",
+                  "bounds": {
+                    "x": 93.5,
+                    "y": 104.5,
+                    "width": 239,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0204-0000-4000-8000-000000000204": {
+                  "id": "b0204-0000-4000-8000-000000000204",
+                  "name": "price_eur",
+                  "type": "ClassAttribute",
+                  "owner": "a0002-0000-4000-8000-000000000002",
+                  "bounds": {
+                    "x": 93.5,
+                    "y": 134.5,
+                    "width": 239,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "int",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0205-0000-4000-8000-000000000205": {
+                  "id": "b0205-0000-4000-8000-000000000205",
+                  "name": "capacity",
+                  "type": "ClassAttribute",
+                  "owner": "a0002-0000-4000-8000-000000000002",
+                  "bounds": {
+                    "x": 93.5,
+                    "y": 164.5,
+                    "width": 239,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "int",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0206-0000-4000-8000-000000000206": {
+                  "id": "b0206-0000-4000-8000-000000000206",
+                  "name": "pmr_entrance",
+                  "type": "ClassAttribute",
+                  "owner": "a0002-0000-4000-8000-000000000002",
+                  "bounds": {
+                    "x": 93.5,
+                    "y": 194.5,
+                    "width": 239,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "a0003-0000-4000-8000-000000000003": {
+                  "id": "a0003-0000-4000-8000-000000000003",
+                  "name": "Reservation",
+                  "type": "Class",
+                  "owner": null,
+                  "bounds": {
+                    "x": 588,
+                    "y": -262,
+                    "width": 260,
+                    "height": 190
+                  },
+                  "attributes": [
+                    "b0301-0000-4000-8000-000000000301",
+                    "b0302-0000-4000-8000-000000000302",
+                    "b0303-0000-4000-8000-000000000303",
+                    "b0304-0000-4000-8000-000000000304",
+                    "b0305-0000-4000-8000-000000000305"
+                  ],
+                  "methods": []
+                },
+                "b0301-0000-4000-8000-000000000301": {
+                  "id": "b0301-0000-4000-8000-000000000301",
+                  "name": "confirmation_code",
+                  "type": "ClassAttribute",
+                  "owner": "a0003-0000-4000-8000-000000000003",
+                  "bounds": {
+                    "x": 588.5,
+                    "y": -221.5,
+                    "width": 259,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0302-0000-4000-8000-000000000302": {
+                  "id": "b0302-0000-4000-8000-000000000302",
+                  "name": "customer_name",
+                  "type": "ClassAttribute",
+                  "owner": "a0003-0000-4000-8000-000000000003",
+                  "bounds": {
+                    "x": 588.5,
+                    "y": -191.5,
+                    "width": 259,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0303-0000-4000-8000-000000000303": {
+                  "id": "b0303-0000-4000-8000-000000000303",
+                  "name": "seats",
+                  "type": "ClassAttribute",
+                  "owner": "a0003-0000-4000-8000-000000000003",
+                  "bounds": {
+                    "x": 588.5,
+                    "y": -161.5,
+                    "width": 259,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "int",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0304-0000-4000-8000-000000000304": {
+                  "id": "b0304-0000-4000-8000-000000000304",
+                  "name": "zone",
+                  "type": "ClassAttribute",
+                  "owner": "a0003-0000-4000-8000-000000000003",
+                  "bounds": {
+                    "x": 588.5,
+                    "y": -131.5,
+                    "width": 259,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0305-0000-4000-8000-000000000305": {
+                  "id": "b0305-0000-4000-8000-000000000305",
+                  "name": "accessibility",
+                  "type": "ClassAttribute",
+                  "owner": "a0003-0000-4000-8000-000000000003",
+                  "bounds": {
+                    "x": 588.5,
+                    "y": -101.5,
+                    "width": 259,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "str",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "a0004-0000-4000-8000-000000000004": {
+                  "id": "a0004-0000-4000-8000-000000000004",
+                  "name": "StandardSpectator",
+                  "type": "Class",
+                  "owner": null,
+                  "bounds": {
+                    "x": -134.5,
+                    "y": -224.52734375,
+                    "width": 280,
+                    "height": 70
+                  },
+                  "attributes": [
+                    "b0401-0000-4000-8000-000000000401"
+                  ],
+                  "methods": []
+                },
+                "b0401-0000-4000-8000-000000000401": {
+                  "id": "b0401-0000-4000-8000-000000000401",
+                  "name": "boxOfficeStyle",
+                  "type": "ClassAttribute",
+                  "owner": "a0004-0000-4000-8000-000000000004",
+                  "bounds": {
+                    "x": -134,
+                    "y": -184.02734375,
+                    "width": 279,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "short",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "a0005-0000-4000-8000-000000000005": {
+                  "id": "a0005-0000-4000-8000-000000000005",
+                  "name": "AccessibilitySpectator",
+                  "type": "Class",
+                  "owner": null,
+                  "bounds": {
+                    "x": -11,
+                    "y": -376,
+                    "width": 300,
+                    "height": 100
+                  },
+                  "attributes": [
+                    "b0501-0000-4000-8000-000000000501",
+                    "b0502-0000-4000-8000-000000000502"
+                  ],
+                  "methods": []
+                },
+                "b0501-0000-4000-8000-000000000501": {
+                  "id": "b0501-0000-4000-8000-000000000501",
+                  "name": "guidance",
+                  "type": "ClassAttribute",
+                  "owner": "a0005-0000-4000-8000-000000000005",
+                  "bounds": {
+                    "x": -10.5,
+                    "y": -335.5,
+                    "width": 299,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "detailed",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                },
+                "b0502-0000-4000-8000-000000000502": {
+                  "id": "b0502-0000-4000-8000-000000000502",
+                  "name": "boxOfficeTone",
+                  "type": "ClassAttribute",
+                  "owner": "a0005-0000-4000-8000-000000000005",
+                  "bounds": {
+                    "x": -10.5,
+                    "y": -305.5,
+                    "width": 299,
+                    "height": 30
+                  },
+                  "code": "",
+                  "visibility": "public",
+                  "attributeType": "ACCESS",
+                  "implementationType": "none",
+                  "stateMachineId": "",
+                  "quantumCircuitId": "",
+                  "isOptional": false,
+                  "isDerived": false,
+                  "isId": false,
+                  "isExternalId": false
+                }
+              },
+              "relationships": {
+                "r0001-0000-4000-8000-000000000001": {
+                  "id": "r0001-0000-4000-8000-000000000001",
+                  "name": "programme",
+                  "type": "ClassBidirectional",
+                  "owner": null,
+                  "bounds": {
+                    "x": -22,
+                    "y": 87,
+                    "width": 115,
+                    "height": 49.5
+                  },
+                  "path": [
+                    {
+                      "x": 0,
+                      "y": 10
+                    },
+                    {
+                      "x": 115,
+                      "y": 10
+                    }
+                  ],
+                  "source": {
+                    "direction": "Right",
+                    "element": "a0001-0000-4000-8000-000000000001",
+                    "multiplicity": "1",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "target": {
+                    "direction": "Left",
+                    "element": "a0002-0000-4000-8000-000000000002",
+                    "multiplicity": "1..*",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "isManuallyLayouted": false
+                },
+                "r0002-0000-4000-8000-000000000002": {
+                  "id": "r0002-0000-4000-8000-000000000002",
+                  "name": "bookings",
+                  "type": "ClassBidirectional",
+                  "owner": null,
+                  "bounds": {
+                    "x": 333,
+                    "y": -177,
+                    "width": 255,
+                    "height": 330.5
+                  },
+                  "path": [
+                    {
+                      "x": 0,
+                      "y": 291
+                    },
+                    {
+                      "x": 127.5,
+                      "y": 291
+                    },
+                    {
+                      "x": 127.5,
+                      "y": 10
+                    },
+                    {
+                      "x": 255,
+                      "y": 10
+                    }
+                  ],
+                  "source": {
+                    "direction": "Right",
+                    "element": "a0002-0000-4000-8000-000000000002",
+                    "multiplicity": "1",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "target": {
+                    "direction": "Left",
+                    "element": "a0003-0000-4000-8000-000000000003",
+                    "multiplicity": "0..*",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "isManuallyLayouted": false
+                },
+                "r0003-0000-4000-8000-000000000003": {
+                  "id": "r0003-0000-4000-8000-000000000003",
+                  "name": "places",
+                  "type": "ClassBidirectional",
+                  "owner": null,
+                  "bounds": {
+                    "x": 145.5,
+                    "y": -199.52734375,
+                    "width": 442.5,
+                    "height": 49.5
+                  },
+                  "path": [
+                    {
+                      "x": 0,
+                      "y": 10
+                    },
+                    {
+                      "x": 442.5,
+                      "y": 10
+                    }
+                  ],
+                  "source": {
+                    "direction": "Right",
+                    "element": "a0004-0000-4000-8000-000000000004",
+                    "multiplicity": "1",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "target": {
+                    "direction": "Left",
+                    "element": "a0003-0000-4000-8000-000000000003",
+                    "multiplicity": "0..*",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "isManuallyLayouted": false
+                },
+                "r0004-0000-4000-8000-000000000004": {
+                  "id": "r0004-0000-4000-8000-000000000004",
+                  "name": "places",
+                  "type": "ClassBidirectional",
+                  "owner": null,
+                  "bounds": {
+                    "x": 289,
+                    "y": -336,
+                    "width": 299,
+                    "height": 208.5
+                  },
+                  "path": [
+                    {
+                      "x": 0,
+                      "y": 10
+                    },
+                    {
+                      "x": 149.5,
+                      "y": 10
+                    },
+                    {
+                      "x": 149.5,
+                      "y": 169
+                    },
+                    {
+                      "x": 299,
+                      "y": 169
+                    }
+                  ],
+                  "source": {
+                    "direction": "Right",
+                    "element": "a0005-0000-4000-8000-000000000005",
+                    "multiplicity": "1",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "target": {
+                    "direction": "Left",
+                    "element": "a0003-0000-4000-8000-000000000003",
+                    "multiplicity": "0..*",
+                    "role": "",
+                    "bounds": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  "isManuallyLayouted": false
+                }
+              },
+              "assessments": {}
+            }
+          }
+        }
+      ],
+      "AgentDiagram": [
+        {
+          "id": "theatre_agent",
+          "title": "Theatre reservation agent",
+          "lastUpdate": "2026-06-04T13:48:28.431Z",
+          "model": {
+            "version": "3.0.0",
+            "type": "AgentDiagram",
+            "size": {
+              "width": 2536,
+              "height": 833.609375
+            },
+            "interactive": {
+              "elements": {},
+              "relationships": {}
+            },
+            "elements": {
+              "ag0001-0000-4000-8000-000000000001": {
+                "id": "ag0001-0000-4000-8000-000000000001",
+                "name": "",
+                "type": "StateInitialNode",
+                "owner": null,
+                "bounds": {
+                  "x": -1150,
+                  "y": -2,
+                  "width": 45,
+                  "height": 45
+                }
+              },
+              "ag0002-0000-4000-8000-000000000002": {
+                "id": "ag0002-0000-4000-8000-000000000002",
+                "name": "initial_state",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": -969,
+                  "y": 2,
+                  "width": 200,
+                  "height": 40
+                },
+                "bodies": [],
+                "fallbackBodies": []
+              },
+              "ag0003-0000-4000-8000-000000000003": {
+                "id": "ag0003-0000-4000-8000-000000000003",
+                "name": "profile_pick",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": -684,
+                  "y": 2,
+                  "width": 360,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0004-0000-4000-8000-000000000004"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0004-0000-4000-8000-000000000004": {
+                "id": "ag0004-0000-4000-8000-000000000004",
+                "name": "Welcome \u2014 pick STANDARD or ACCESS",
+                "type": "AgentStateBody",
+                "owner": "ag0003-0000-4000-8000-000000000003",
+                "bounds": {
+                  "x": -683.5,
+                  "y": 42.5,
+                  "width": 359,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0005-0000-4000-8000-000000000005": {
+                "id": "ag0005-0000-4000-8000-000000000005",
+                "name": "hub",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": 140,
+                  "y": 123,
+                  "width": 230,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0006-0000-4000-8000-000000000006",
+                  "ag0007-0000-4000-8000-000000000007"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0006-0000-4000-8000-000000000006": {
+                "id": "ag0006-0000-4000-8000-000000000006",
+                "name": "BOOK | FAQ | CANCEL",
+                "type": "AgentStateBody",
+                "owner": "ag0005-0000-4000-8000-000000000005",
+                "bounds": {
+                  "x": 140.5,
+                  "y": 163.5,
+                  "width": 229,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0007-0000-4000-8000-000000000007": {
+                "id": "ag0007-0000-4000-8000-000000000007",
+                "name": "Shows menu",
+                "type": "AgentStateBody",
+                "owner": "ag0005-0000-4000-8000-000000000005",
+                "bounds": {
+                  "x": 140.5,
+                  "y": 193.5,
+                  "width": 229,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0008-0000-4000-8000-000000000008": {
+                "id": "ag0008-0000-4000-8000-000000000008",
+                "name": "show_select",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": -129.69921875,
+                  "y": -72.859375,
+                  "width": 270,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0009-0000-4000-8000-000000000009"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0009-0000-4000-8000-000000000009": {
+                "id": "ag0009-0000-4000-8000-000000000009",
+                "name": "Pick Hamlet / Jazz / Comedy",
+                "type": "AgentStateBody",
+                "owner": "ag0008-0000-4000-8000-000000000008",
+                "bounds": {
+                  "x": -129.19921875,
+                  "y": -32.359375,
+                  "width": 269,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0010-0000-4000-8000-000000000010": {
+                "id": "ag0010-0000-4000-8000-000000000010",
+                "name": "seat_count",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": 280,
+                  "y": -80,
+                  "width": 200,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0011-0000-4000-8000-000000000011"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0011-0000-4000-8000-000000000011": {
+                "id": "ag0011-0000-4000-8000-000000000011",
+                "name": "Seats 1\u20134",
+                "type": "AgentStateBody",
+                "owner": "ag0010-0000-4000-8000-000000000010",
+                "bounds": {
+                  "x": 280.5,
+                  "y": -39.5,
+                  "width": 199,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0012-0000-4000-8000-000000000012": {
+                "id": "ag0012-0000-4000-8000-000000000012",
+                "name": "zone_pick",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": 621.26953125,
+                  "y": -83.57421875,
+                  "width": 200,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0013-0000-4000-8000-000000000013"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0013-0000-4000-8000-000000000013": {
+                "id": "ag0013-0000-4000-8000-000000000013",
+                "name": "FRONT or REAR",
+                "type": "AgentStateBody",
+                "owner": "ag0012-0000-4000-8000-000000000012",
+                "bounds": {
+                  "x": 621.76953125,
+                  "y": -43.07421875,
+                  "width": 199,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0014-0000-4000-8000-000000000014": {
+                "id": "ag0014-0000-4000-8000-000000000014",
+                "name": "confirm_do",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": 958,
+                  "y": -80,
+                  "width": 250,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0015-0000-4000-8000-000000000015"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0015-0000-4000-8000-000000000015": {
+                "id": "ag0015-0000-4000-8000-000000000015",
+                "name": "Book + confirmation code",
+                "type": "AgentStateBody",
+                "owner": "ag0014-0000-4000-8000-000000000014",
+                "bounds": {
+                  "x": 958.5,
+                  "y": -39.5,
+                  "width": 249,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0016-0000-4000-8000-000000000016": {
+                "id": "ag0016-0000-4000-8000-000000000016",
+                "name": "faq_llm",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": -704,
+                  "y": 291,
+                  "width": 270,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0017-0000-4000-8000-000000000017"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0017-0000-4000-8000-000000000017": {
+                "id": "ag0017-0000-4000-8000-000000000017",
+                "name": "LLM FAQ (profile-aware tone)",
+                "type": "AgentStateBody",
+                "owner": "ag0016-0000-4000-8000-000000000016",
+                "bounds": {
+                  "x": -703.5,
+                  "y": 331.5,
+                  "width": 269,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0018-0000-4000-8000-000000000018": {
+                "id": "ag0018-0000-4000-8000-000000000018",
+                "name": "cancel_reset",
+                "type": "AgentState",
+                "owner": null,
+                "bounds": {
+                  "x": -365.78515625,
+                  "y": 326.8046875,
+                  "width": 200,
+                  "height": 70
+                },
+                "bodies": [
+                  "ag0019-0000-4000-8000-000000000019"
+                ],
+                "fallbackBodies": []
+              },
+              "ag0019-0000-4000-8000-000000000019": {
+                "id": "ag0019-0000-4000-8000-000000000019",
+                "name": "Clear draft \u2192 hub",
+                "type": "AgentStateBody",
+                "owner": "ag0018-0000-4000-8000-000000000018",
+                "bounds": {
+                  "x": -365.28515625,
+                  "y": 367.3046875,
+                  "width": 199,
+                  "height": 30
+                },
+                "replyType": "text",
+                "llm_name": ""
+              },
+              "ag0020-0000-4000-8000-000000000020": {
+                "id": "ag0020-0000-4000-8000-000000000020",
+                "name": "profile_standard",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": -600,
+                  "y": -220,
+                  "width": 230,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0021-0000-4000-8000-000000000021"
+                ],
+                "intent_description": "Standard profile"
+              },
+              "ag0021-0000-4000-8000-000000000021": {
+                "id": "ag0021-0000-4000-8000-000000000021",
+                "name": "STANDARD",
+                "type": "AgentIntentBody",
+                "owner": "ag0020-0000-4000-8000-000000000020",
+                "bounds": {
+                  "x": -599.5,
+                  "y": -149.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0022-0000-4000-8000-000000000022": {
+                "id": "ag0022-0000-4000-8000-000000000022",
+                "name": "profile_access",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": -400,
+                  "y": -220,
+                  "width": 250,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0023-0000-4000-8000-000000000023"
+                ],
+                "intent_description": "Accessibility profile"
+              },
+              "ag0023-0000-4000-8000-000000000023": {
+                "id": "ag0023-0000-4000-8000-000000000023",
+                "name": "ACCESS",
+                "type": "AgentIntentBody",
+                "owner": "ag0022-0000-4000-8000-000000000022",
+                "bounds": {
+                  "x": -399.5,
+                  "y": -149.5,
+                  "width": 249,
+                  "height": 30
+                }
+              },
+              "ag0024-0000-4000-8000-000000000024": {
+                "id": "ag0024-0000-4000-8000-000000000024",
+                "name": "start_booking",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": -300,
+                  "y": -220,
+                  "width": 230,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0025-0000-4000-8000-000000000025"
+                ],
+                "intent_description": "Start booking"
+              },
+              "ag0025-0000-4000-8000-000000000025": {
+                "id": "ag0025-0000-4000-8000-000000000025",
+                "name": "BOOK",
+                "type": "AgentIntentBody",
+                "owner": "ag0024-0000-4000-8000-000000000024",
+                "bounds": {
+                  "x": -299.5,
+                  "y": -149.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0026-0000-4000-8000-000000000026": {
+                "id": "ag0026-0000-4000-8000-000000000026",
+                "name": "ask_faq",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": -100,
+                  "y": -220,
+                  "width": 230,
+                  "height": 130
+                },
+                "bodies": [
+                  "ag0027-0000-4000-8000-000000000027",
+                  "ag0028-0000-4000-8000-000000000028"
+                ],
+                "intent_description": "FAQ question"
+              },
+              "ag0027-0000-4000-8000-000000000027": {
+                "id": "ag0027-0000-4000-8000-000000000027",
+                "name": "FAQ",
+                "type": "AgentIntentBody",
+                "owner": "ag0026-0000-4000-8000-000000000026",
+                "bounds": {
+                  "x": -99.5,
+                  "y": -149.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0028-0000-4000-8000-000000000028": {
+                "id": "ag0028-0000-4000-8000-000000000028",
+                "name": "prices?",
+                "type": "AgentIntentBody",
+                "owner": "ag0026-0000-4000-8000-000000000026",
+                "bounds": {
+                  "x": -99.5,
+                  "y": -119.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0029-0000-4000-8000-000000000029": {
+                "id": "ag0029-0000-4000-8000-000000000029",
+                "name": "cancel_booking",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": 100,
+                  "y": -220,
+                  "width": 230,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0030-0000-4000-8000-000000000030"
+                ],
+                "intent_description": "Cancel draft"
+              },
+              "ag0030-0000-4000-8000-000000000030": {
+                "id": "ag0030-0000-4000-8000-000000000030",
+                "name": "CANCEL",
+                "type": "AgentIntentBody",
+                "owner": "ag0029-0000-4000-8000-000000000029",
+                "bounds": {
+                  "x": 100.5,
+                  "y": -149.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0031-0000-4000-8000-000000000031": {
+                "id": "ag0031-0000-4000-8000-000000000031",
+                "name": "pick_hamlet",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": 0,
+                  "y": -320,
+                  "width": 230,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0032-0000-4000-8000-000000000032"
+                ],
+                "intent_description": "Pick show"
+              },
+              "ag0032-0000-4000-8000-000000000032": {
+                "id": "ag0032-0000-4000-8000-000000000032",
+                "name": "Hamlet",
+                "type": "AgentIntentBody",
+                "owner": "ag0031-0000-4000-8000-000000000031",
+                "bounds": {
+                  "x": 0.5,
+                  "y": -249.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0033-0000-4000-8000-000000000033": {
+                "id": "ag0033-0000-4000-8000-000000000033",
+                "name": "seats_2",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": 280,
+                  "y": -320,
+                  "width": 230,
+                  "height": 130
+                },
+                "bodies": [
+                  "ag0034-0000-4000-8000-000000000034",
+                  "ag0035-0000-4000-8000-000000000035"
+                ],
+                "intent_description": "Two seats"
+              },
+              "ag0034-0000-4000-8000-000000000034": {
+                "id": "ag0034-0000-4000-8000-000000000034",
+                "name": "2",
+                "type": "AgentIntentBody",
+                "owner": "ag0033-0000-4000-8000-000000000033",
+                "bounds": {
+                  "x": 280.5,
+                  "y": -249.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0035-0000-4000-8000-000000000035": {
+                "id": "ag0035-0000-4000-8000-000000000035",
+                "name": "two seats",
+                "type": "AgentIntentBody",
+                "owner": "ag0033-0000-4000-8000-000000000033",
+                "bounds": {
+                  "x": 280.5,
+                  "y": -219.5,
+                  "width": 229,
+                  "height": 30
+                }
+              },
+              "ag0036-0000-4000-8000-000000000036": {
+                "id": "ag0036-0000-4000-8000-000000000036",
+                "name": "zone_front",
+                "type": "AgentIntent",
+                "owner": null,
+                "bounds": {
+                  "x": 560,
+                  "y": -320,
+                  "width": 230,
+                  "height": 100
+                },
+                "bodies": [
+                  "ag0037-0000-4000-8000-000000000037"
+                ],
+                "intent_description": "Front zone"
+              },
+              "ag0037-0000-4000-8000-000000000037": {
+                "id": "ag0037-0000-4000-8000-000000000037",
+                "name": "FRONT",
+                "type": "AgentIntentBody",
+                "owner": "ag0036-0000-4000-8000-000000000036",
+                "bounds": {
+                  "x": 560.5,
+                  "y": -249.5,
+                  "width": 229,
+                  "height": 30
+                }
+              }
+            },
+            "relationships": {
+              "ag0038-0000-4000-8000-000000000038": {
+                "id": "ag0038-0000-4000-8000-000000000038",
+                "name": "",
+                "type": "AgentStateTransitionInit",
+                "owner": null,
+                "bounds": {
+                  "x": -1105,
+                  "y": 22,
+                  "width": 136,
+                  "height": 1
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 136,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0001-0000-4000-8000-000000000001"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0002-0000-4000-8000-000000000002"
+                },
+                "isManuallyLayouted": false
+              },
+              "ag0039-0000-4000-8000-000000000039": {
+                "id": "ag0039-0000-4000-8000-000000000039",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -769,
+                  "y": 22,
+                  "width": 85,
+                  "height": 1
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 85,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0002-0000-4000-8000-000000000002"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0003-0000-4000-8000-000000000003"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "auto",
+                  "conditionValue": ""
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0040-0000-4000-8000-000000000040": {
+                "id": "ag0040-0000-4000-8000-000000000040",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -324,
+                  "y": 37,
+                  "width": 464,
+                  "height": 136
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 232,
+                    "y": 0
+                  },
+                  {
+                    "x": 232,
+                    "y": 136
+                  },
+                  {
+                    "x": 464,
+                    "y": 136
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0003-0000-4000-8000-000000000003"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "profile_standard"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0041-0000-4000-8000-000000000041": {
+                "id": "ag0041-0000-4000-8000-000000000041",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -324,
+                  "y": 37,
+                  "width": 464,
+                  "height": 136
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 232,
+                    "y": 0
+                  },
+                  {
+                    "x": 232,
+                    "y": 136
+                  },
+                  {
+                    "x": 464,
+                    "y": 136
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0003-0000-4000-8000-000000000003"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "profile_access"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0042-0000-4000-8000-000000000042": {
+                "id": "ag0042-0000-4000-8000-000000000042",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -169.69921875,
+                  "y": -37.859375,
+                  "width": 579.69921875,
+                  "height": 210.859375
+                },
+                "path": [
+                  {
+                    "x": 539.69921875,
+                    "y": 210.859375
+                  },
+                  {
+                    "x": 579.69921875,
+                    "y": 210.859375
+                  },
+                  {
+                    "x": 579.69921875,
+                    "y": 120.859375
+                  },
+                  {
+                    "x": 0,
+                    "y": 120.859375
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 40,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0008-0000-4000-8000-000000000008"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "start_booking"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0043-0000-4000-8000-000000000043": {
+                "id": "ag0043-0000-4000-8000-000000000043",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -744,
+                  "y": 173,
+                  "width": 1154,
+                  "height": 153
+                },
+                "path": [
+                  {
+                    "x": 1114,
+                    "y": 0
+                  },
+                  {
+                    "x": 1154,
+                    "y": 0
+                  },
+                  {
+                    "x": 1154,
+                    "y": 90
+                  },
+                  {
+                    "x": 597,
+                    "y": 90
+                  },
+                  {
+                    "x": 597,
+                    "y": 78
+                  },
+                  {
+                    "x": 0,
+                    "y": 78
+                  },
+                  {
+                    "x": 0,
+                    "y": 153
+                  },
+                  {
+                    "x": 40,
+                    "y": 153
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0016-0000-4000-8000-000000000016"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "ask_faq"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0044-0000-4000-8000-000000000044": {
+                "id": "ag0044-0000-4000-8000-000000000044",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -405.78515625,
+                  "y": 173,
+                  "width": 815.78515625,
+                  "height": 188.8046875
+                },
+                "path": [
+                  {
+                    "x": 775.78515625,
+                    "y": 0
+                  },
+                  {
+                    "x": 815.78515625,
+                    "y": 0
+                  },
+                  {
+                    "x": 815.78515625,
+                    "y": 90
+                  },
+                  {
+                    "x": 0,
+                    "y": 90
+                  },
+                  {
+                    "x": 0,
+                    "y": 188.8046875
+                  },
+                  {
+                    "x": 40,
+                    "y": 188.8046875
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0018-0000-4000-8000-000000000018"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "cancel_booking"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0045-0000-4000-8000-000000000045": {
+                "id": "ag0045-0000-4000-8000-000000000045",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": 140.30078125,
+                  "y": -41.4296875,
+                  "width": 139.69921875,
+                  "height": 1
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 139.69921875,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0008-0000-4000-8000-000000000008"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0010-0000-4000-8000-000000000010"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "pick_hamlet"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0046-0000-4000-8000-000000000046": {
+                "id": "ag0046-0000-4000-8000-000000000046",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": 480,
+                  "y": -46.787109375,
+                  "width": 141.26953125,
+                  "height": 1
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 141.26953125,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0010-0000-4000-8000-000000000010"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0012-0000-4000-8000-000000000012"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "seats_2"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0047-0000-4000-8000-000000000047": {
+                "id": "ag0047-0000-4000-8000-000000000047",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": 821.26953125,
+                  "y": -46.787109375,
+                  "width": 136.73046875,
+                  "height": 1
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 136.73046875,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0012-0000-4000-8000-000000000012"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0014-0000-4000-8000-000000000014"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "when_intent_matched",
+                  "intentName": "zone_front"
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0048-0000-4000-8000-000000000048": {
+                "id": "ag0048-0000-4000-8000-000000000048",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": 100,
+                  "y": -45,
+                  "width": 1148,
+                  "height": 218
+                },
+                "path": [
+                  {
+                    "x": 1108,
+                    "y": 0
+                  },
+                  {
+                    "x": 1148,
+                    "y": 0
+                  },
+                  {
+                    "x": 1148,
+                    "y": 75
+                  },
+                  {
+                    "x": 0,
+                    "y": 75
+                  },
+                  {
+                    "x": 0,
+                    "y": 218
+                  },
+                  {
+                    "x": 40,
+                    "y": 218
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0014-0000-4000-8000-000000000014"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "auto",
+                  "conditionValue": ""
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0049-0000-4000-8000-000000000049": {
+                "id": "ag0049-0000-4000-8000-000000000049",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -434,
+                  "y": 173,
+                  "width": 574,
+                  "height": 153
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 153
+                  },
+                  {
+                    "x": 287,
+                    "y": 153
+                  },
+                  {
+                    "x": 287,
+                    "y": 0
+                  },
+                  {
+                    "x": 574,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0016-0000-4000-8000-000000000016"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "auto",
+                  "conditionValue": ""
+                },
+                "custom": {
+                  "condition": []
+                }
+              },
+              "ag0050-0000-4000-8000-000000000050": {
+                "id": "ag0050-0000-4000-8000-000000000050",
+                "name": "",
+                "type": "AgentStateTransition",
+                "owner": null,
+                "bounds": {
+                  "x": -165.78515625,
+                  "y": 173,
+                  "width": 305.78515625,
+                  "height": 188.8046875
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 188.8046875
+                  },
+                  {
+                    "x": 152.892578125,
+                    "y": 188.8046875
+                  },
+                  {
+                    "x": 152.892578125,
+                    "y": 0
+                  },
+                  {
+                    "x": 305.78515625,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "ag0018-0000-4000-8000-000000000018"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "ag0005-0000-4000-8000-000000000005"
+                },
+                "isManuallyLayouted": false,
+                "transitionType": "predefined",
+                "predefined": {
+                  "predefinedType": "auto",
+                  "conditionValue": ""
+                },
+                "custom": {
+                  "condition": []
+                }
+              }
+            },
+            "assessments": {}
+          }
+        }
+      ],
+      "UserDiagram": [
+        {
+          "id": "user_diagram_standard_spectator",
+          "title": "Standard spectator",
+          "lastUpdate": "2026-04-22T15:00:00.000Z",
+          "model": {
+            "version": "3.0.0",
+            "type": "UserDiagram",
+            "size": {
+              "width": 1400,
+              "height": 740
+            },
+            "interactive": {
+              "elements": {},
+              "relationships": {}
+            },
+            "elements": {
+              "c0010000-0000-4000-8000-000000000001": {
+                "id": "c0010000-0000-4000-8000-000000000001",
+                "name": "Standard spectator",
+                "type": "UserModelName",
+                "owner": null,
+                "bounds": {
+                  "x": 120,
+                  "y": 120,
+                  "width": 320,
+                  "height": 100
+                },
+                "underline": true,
+                "italic": false,
+                "stereotype": null,
+                "attributes": [
+                  "c0010000-0000-4000-8000-000000000002"
+                ],
+                "methods": []
+              },
+              "c0010000-0000-4000-8000-000000000002": {
+                "id": "c0010000-0000-4000-8000-000000000002",
+                "name": "Prefers short factual answers at the box office.",
+                "type": "UserModelAttribute",
+                "owner": "c0010000-0000-4000-8000-000000000001",
+                "bounds": {
+                  "x": 120.5,
+                  "y": 165.5,
+                  "width": 319,
+                  "height": 30
+                },
+                "attributeOperator": "=="
+              }
+            },
+            "relationships": {},
+            "assessments": {}
+          }
+        },
+        {
+          "id": "user_diagram_access_spectator",
+          "title": "Accessibility-focused spectator",
+          "lastUpdate": "2026-04-22T15:00:00.000Z",
+          "model": {
+            "version": "3.0.0",
+            "type": "UserDiagram",
+            "size": {
+              "width": 1400,
+              "height": 740
+            },
+            "interactive": {
+              "elements": {},
+              "relationships": {}
+            },
+            "elements": {
+              "c0020000-0000-4000-8000-000000000001": {
+                "id": "c0020000-0000-4000-8000-000000000001",
+                "name": "Accessibility spectator",
+                "type": "UserModelName",
+                "owner": null,
+                "bounds": {
+                  "x": 120,
+                  "y": 140,
+                  "width": 280,
+                  "height": 70
+                },
+                "underline": true,
+                "italic": false,
+                "stereotype": null,
+                "attributes": [],
+                "methods": []
+              },
+              "c0020000-0000-4000-8000-000000000002": {
+                "id": "c0020000-0000-4000-8000-000000000002",
+                "name": "Support needs",
+                "type": "UserModelName",
+                "owner": null,
+                "bounds": {
+                  "x": 520,
+                  "y": 100,
+                  "width": 380,
+                  "height": 180
+                },
+                "underline": true,
+                "italic": false,
+                "stereotype": null,
+                "attributes": [
+                  "c0020000-0000-4000-8000-000000000003",
+                  "c0020000-0000-4000-8000-000000000004",
+                  "c0020000-0000-4000-8000-000000000005"
+                ],
+                "methods": []
+              },
+              "c0020000-0000-4000-8000-000000000003": {
+                "id": "c0020000-0000-4000-8000-000000000003",
+                "name": "name = Hearing loop / PMR detail",
+                "type": "UserModelAttribute",
+                "owner": "c0020000-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 520.5,
+                  "y": 145.5,
+                  "width": 379,
+                  "height": 30
+                },
+                "attributeOperator": "=="
+              },
+              "c0020000-0000-4000-8000-000000000004": {
+                "id": "c0020000-0000-4000-8000-000000000004",
+                "name": "description = Wants step-by-step and repeated access info",
+                "type": "UserModelAttribute",
+                "owner": "c0020000-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 520.5,
+                  "y": 175.5,
+                  "width": 379,
+                  "height": 30
+                },
+                "attributeOperator": "=="
+              },
+              "c0020000-0000-4000-8000-000000000005": {
+                "id": "c0020000-0000-4000-8000-000000000005",
+                "name": "affects = BoxOfficeTone",
+                "type": "UserModelAttribute",
+                "owner": "c0020000-0000-4000-8000-000000000002",
+                "bounds": {
+                  "x": 520.5,
+                  "y": 205.5,
+                  "width": 379,
+                  "height": 30
+                },
+                "attributeOperator": "=="
+              }
+            },
+            "relationships": {
+              "c0020000-0000-4000-8000-000000000006": {
+                "id": "c0020000-0000-4000-8000-000000000006",
+                "name": "",
+                "type": "UserModelLink",
+                "owner": null,
+                "bounds": {
+                  "x": 400,
+                  "y": 160,
+                  "width": 120,
+                  "height": 1
+                },
+                "path": [
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 120,
+                    "y": 0
+                  }
+                ],
+                "source": {
+                  "direction": "Right",
+                  "element": "c0020000-0000-4000-8000-000000000001"
+                },
+                "target": {
+                  "direction": "Left",
+                  "element": "c0020000-0000-4000-8000-000000000002"
+                },
+                "isManuallyLayouted": false
+              }
+            },
+            "assessments": {}
+          }
+        }
+      ],
+      "GUINoCodeDiagram": [
+        {
+          "id": "theatre_gui",
+          "title": "Theatre web GUI",
+          "lastUpdate": "2026-06-04T12:00:00.000Z",
+          "model": {
+            "pages": [
+              {
+                "name": "Shows",
+                "frames": [
+                  {
+                    "component": {
+                      "type": "wrapper",
+                      "stylable": [
+                        "background",
+                        "background-color"
+                      ],
+                      "attributes": {
+                        "id": "theatre-root"
+                      },
+                      "components": [
+                        {
+                          "tagName": "section",
+                          "attributes": {
+                            "id": "shows-page"
+                          },
+                          "components": [
+                            {
+                              "type": "text",
+                              "tagName": "h1",
+                              "attributes": {
+                                "id": "shows-title"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Theatre \u2014 Shows"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "tagName": "p",
+                              "attributes": {
+                                "id": "shows-hint"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Table bound to Show (class diagram). Use Generate \u2192 Web Application or the bundled webapp/."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "tagName": "p",
+                              "attributes": {
+                                "id": "agent-hint"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Chatbot: theatre reservation agent (Agent diagram). Run python theatre_bot.py or Docker agent service."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "head": {
+                        "type": "head"
+                      },
+                      "docEl": {
+                        "tagName": "html"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Reservations",
+                "frames": [
+                  {
+                    "component": {
+                      "type": "wrapper",
+                      "components": [
+                        {
+                          "type": "text",
+                          "tagName": "h1",
+                          "components": [
+                            {
+                              "type": "textnode",
+                              "content": "Reservations"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "tagName": "p",
+                          "components": [
+                            {
+                              "type": "textnode",
+                              "content": "Lists bookings from REST API GET /reservations"
+                            }
+                          ]
+                        }
+                      ],
+                      "head": {
+                        "type": "head"
+                      },
+                      "docEl": {
+                        "tagName": "html"
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": [],
+            "symbols": [],
+            "version": "0.21.13"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "defaultDiagramType": "ClassDiagram",
+      "autoSave": true,
+      "collaborationEnabled": false,
+      "perspectives": {
+        "ClassDiagram": true,
+        "ObjectDiagram": true,
+        "StateMachineDiagram": true,
+        "AgentDiagram": true,
+        "UserDiagram": true,
+        "GUINoCodeDiagram": true,
+        "QuantumCircuitDiagram": true,
+        "NNDiagram": true
+      }
+    }
+  },
+  "exportedAt": "2026-06-04T13:49:09.977Z",
+  "version": "2.0.0"
+}
